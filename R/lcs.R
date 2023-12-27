@@ -1,3 +1,6 @@
+#' @importFrom Rcpp evalCpp
+#' @useDynLib lcs
+NULL
 
 #' Get the longest common substring
 #'
@@ -9,8 +12,6 @@
 #' @examples
 #' library(lcs)
 #' CalLCS("AGCAT","ACGGCAT")
-
-
 CalLCS <- function(s1,s2){
   if (missing(s1) || missing(s2) || s1 == "" || s2 == "") {
     stop("Both strings must be provided and non-empty.")

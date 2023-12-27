@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 longest_common_substring <- function(s1, s2) {
-    .Call(`_lcs_longest_common_substring`, s1, s2)
+    .Call('_lcs_longest_common_substring', PACKAGE = 'lcs', s1, s2)
 }
 
