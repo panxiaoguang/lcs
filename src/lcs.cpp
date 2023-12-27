@@ -2,7 +2,7 @@
 using namespace Rcpp;
 
 // [[Rcpp::export]]
-String longest_common_substring(std::string s1, std::string s2) {
+std::string longest_common_substring(std::string s1, std::string s2) {
     int len1 = s1.size();
     int len2 = s2.size();
     std::vector<std::vector<int>> m(len1 + 1, std::vector<int>(len2 + 1, 0));
